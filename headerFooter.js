@@ -29,7 +29,7 @@ const headerHTML = `
     <button id="closeDrawer" class="text-3xl font-bold text-white hover:text-red-500">&times;</button>
   </div>
   <nav class="flex flex-col space-y-3 text-base">
-    <a href=""index.html"" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-user-plus w-5"></i><span>🏠 Home</span></a>
+    <a href=""index.html"" class="flex items-center space-x-3 px-4 py-3 pink-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-user-plus w-5"></i><span>🏠 Home</span></a>
     <a href="zym.html" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-dumbbell w-5"></i><span>💪 Gym</span></a>
     <a href="calisthetic.html" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-person-walking w-5"></i><span>🤸 Calisthenics</span></a>
     <a href="cardio.html" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-running w-5"></i><span>🏃 Cardio</span></a>
