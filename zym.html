@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Workouts</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="headerFooter.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <div id="header"></div>
+
+ <main class="flex-1 max-w-7xl mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-10">Gym Workouts</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" align="center">
+      <div class="bg-white rounded-2xl shadow-xl p-6">
+        <img src="images/bench.jpg" alt="Bench Press" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h2 class="text-2xl font-semibold" >Bench Press</h2>
+        <p class="text-gray-600" >Chest-focused strength training using a barbell.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-6">
+        <img src="images/squats.jfif" alt="Squat" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h2 class="text-2xl font-semibold" >Squats</h2>
+        <p class="text-gray-600" >Compound lower-body workout for quads and glutes.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-6">
+        <img src="images/deadlifts.webp" alt="Deadlift" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h2 class="text-2xl font-semibold">Deadlift</h2>
+        <p class="text-gray-600">Full-body workout to build strength and posture.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+</body>
+</html>
