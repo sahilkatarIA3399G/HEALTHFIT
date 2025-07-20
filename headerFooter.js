@@ -5,7 +5,7 @@ const headerHTML = `
 <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
     <div class="flex items-center space-x-2">
-       <img src="images/logo.png" alt="logo" class="w-8 h-8 rounded-full" />
+      <img src="images/logo.png" alt="logo" class="w-8 h-8 rounded-full" />
       <span class="text-2xl font-bold">HealthFit</span>
     </div>
     <button id="hamburger" class="sm:hidden focus:outline-none">
@@ -22,23 +22,35 @@ const headerHTML = `
   </div>
 </header>
 
-<!-- Styled Side Drawer -->
-<div id="sideDrawer" class="fixed top-0 left-0 h-full w-72 bg-gradient-to-br from-blue-100 to-indigo-200 text-gray-900 shadow-2xl z-50 transform -translate-x-full transition-transform duration-500 ease-in-out p-4 overflow-y-auto">
-  <div class="flex justify-between items-center p-5 border-b border-indigo-300">
-    <h2 class="text-xl font-bold text-indigo-800">Menu</h2>
-    <button id="closeDrawer" class="text-3xl font-bold text-white hover:text-red-500">&times;</button>
+<!-- Sliding Sidebar (Mobile) -->
+<div id="sideDrawer" class="fixed top-0 left-0 h-full w-72 sm:w-80 bg-gray-900 text-white shadow-2xl z-50 transform -translate-x-full transition-transform duration-500 ease-in-out p-5 overflow-y-auto sm:max-w-[300px] w-full">
+  <!-- Header -->
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="User" class="w-10 h-10 rounded-full border-2 border-white" />
+      <span class="text-xl font-semibold">Welcome</span>
+    </div>
+    <button id="closeDrawer" class="text-3xl font-bold hover:text-red-500">&times;</button>
   </div>
-  <nav class="flex flex-col space-y-3 text-base">
-    <a href=""index.html"" class="flex items-center space-x-3 px-4 py-3 pink-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-user-plus w-5"></i><span>🏠 Home</span></a>
-    <a href="zym.html" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-dumbbell w-5"></i><span>💪 Gym</span></a>
-    <a href="calisthetic.html" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-person-walking w-5"></i><span>🤸 Calisthenics</span></a>
-    <a href="cardio.html" class="flex items-center space-x-3 px-4 py-3 blue-600 hover:bg-blue-600 hover:text-white transition-colors"><i class="fas fa-running w-5"></i><span>🏃 Cardio</span></a>
-    
+
+  <!-- Nav Menu -->
+  <nav class="flex flex-col space-y-4">
+    <a href="register.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-user-plus mr-3"></i>Register</a>
+    <a href="zym.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-dumbbell mr-3"></i>Gym Workout</a>
+    <a href="calisthetic.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-person-walking mr-3"></i>Calisthenics</a>
+    <a href="cardio.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-running mr-3"></i>Cardio Workout</a>
+    <a href="yoga.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-spa mr-3"></i>Yoga</a>
+    <a href="meditation.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-brain mr-3"></i>Meditation</a>
+    <a href="detox.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-mug-hot mr-3"></i>Detox Drinks</a>
+    <a href="diet.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-apple-alt mr-3"></i>Diet Plans</a>
+    <a href="weight.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-weight mr-3"></i>Weight Management</a>
   </nav>
 </div>
 
+<!-- Click Overlay -->
 <div id="drawerOverlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-40 transition-opacity duration-300"></div>
 `;
+
 
 document.getElementById("header").innerHTML = headerHTML;
 
