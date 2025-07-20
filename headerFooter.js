@@ -50,9 +50,9 @@ const footerHTML = `
   <p class="text-lg font-semibold">&copy; 2025 HealthFit. All rights reserved.</p>
   <p class="text-sm mt-1">Made for fitness lovers by SKG Group</p>
   <div class="flex justify-center space-x-4 mt-3">
-    <a href="https://www.instagram.com/decent_boy0310?igsh=M3ZsOWliM2F4a3Rh"><img src="insta-logo.png" class="w-5 h-5" alt="Instagram" /></a>
+    <a href="https://www.instagram.com/decent_boy0310?igsh=M3ZsOWliM2F4a3Rh"><img src="insta-logo.svg" class="w-5 h-5" alt="Instagram" /></a>
     <a href="https://www.facebook.com/sahil.kataria.703129"><img src="fb-logo.svg" class="w-5 h-5" alt="Facebook" /></a>
-    <a href="#"><img src="icons/youtube.svg" class="w-5 h-5" alt="YouTube" /></a>
+    <a href="https://youtube.com/@medicines4you?si=-i3S7JGgw9y0AB88"><img src="utube-logo.svg" class="w-5 h-5" alt="YouTube" /></a>
   </div>
 </footer>
 `;
