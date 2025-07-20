@@ -24,13 +24,10 @@ const headerHTML = `
 <!-- Sliding Sidebar (Mobile) -->
 <div id="sideDrawer" class="fixed top-0 left-0 h-full w-72 sm:w-80 bg-gray-900 text-white shadow-2xl z-50 transform -translate-x-full transition-transform duration-500 ease-in-out p-5 overflow-y-auto sm:max-w-[300px] w-full">
   <!-- Header -->
-  <div class="flex items-center justify-between mb-6">
-    <div class="flex items-center space-x-3">
-      
-      <span class="text-xl font-bold">HealthFit</span>
-    </div>
-    <button id="closeDrawer" class="text-3xl font-bold hover:text-red-500">&times;</button>
-  </div>
+    <div class="mb-6 flex justify-center relative">
+  <span class="text-2xl sm:text-3xl font-extrabold text-center">HealthFit</span>
+  <button id="closeDrawer" class="absolute right-0 text-3xl font-bold hover:text-red-500">&times;</button>
+</div>
 
   <!-- Nav Menu -->
   <nav class="flex flex-col space-y-4">
