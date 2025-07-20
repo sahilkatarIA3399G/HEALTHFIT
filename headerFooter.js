@@ -27,7 +27,7 @@ const headerHTML = `
   <div class="flex items-center justify-between mb-6">
     <div class="flex items-center space-x-3">
       
-      <span class="text-xl font-bold text-center">HealthFit</span>
+      <span class="text-xl font-bold">HealthFit</span>
     </div>
     <button id="closeDrawer" class="text-3xl font-bold hover:text-red-500">&times;</button>
   </div>
