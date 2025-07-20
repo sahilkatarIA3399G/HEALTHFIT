@@ -27,23 +27,18 @@ const headerHTML = `
   <!-- Header -->
   <div class="flex items-center justify-between mb-6">
     <div class="flex items-center space-x-3">
-      <img src="images/logo.png" alt="User" class="w-10 h-10 rounded-full border-2 border-white" />
-      <span class="text-xl font-semibold">Welcome</span>
+      
+      <span class="text-xl item-center font-semibold">HealthFit</span>
     </div>
     <button id="closeDrawer" class="text-3xl font-bold hover:text-red-500">&times;</button>
   </div>
 
   <!-- Nav Menu -->
   <nav class="flex flex-col space-y-4">
-    <a href="register.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-user-plus mr-3"></i>Register</a>
-    <a href="zym.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-dumbbell mr-3"></i>Gym Workout</a>
-    <a href="calisthetic.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-person-walking mr-3"></i>Calisthenics</a>
-    <a href="cardio.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-running mr-3"></i>Cardio Workout</a>
-    <a href="yoga.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-spa mr-3"></i>Yoga</a>
-    <a href="meditation.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-brain mr-3"></i>Meditation</a>
-    <a href="detox.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-mug-hot mr-3"></i>Detox Drinks</a>
-    <a href="diet.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-apple-alt mr-3"></i>Diet Plans</a>
-    <a href="weight.html" class="flex items-center bg-gray-700 rounded-xl px-5 py-3 hover:bg-blue-600 transition"><i class="fas fa-weight mr-3"></i>Weight Management</a>
+    <a href="index.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-user-plus mr-3"></i>Home</a>
+    <a href="zym.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-dumbbell mr-3"></i>Gym</a>
+    <a href="calisthetic.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-person-walking mr-3"></i>Calisthenics</a>
+    <a href="cardio.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-running mr-3"></i>Cardio</a>
   </nav>
 </div>
 
