@@ -25,7 +25,7 @@ const headerHTML = `
 <div id="sideDrawer" class="fixed top-0 left-0 h-full w-72 sm:w-80 bg-gray-900 text-white shadow-2xl z-50 transform -translate-x-full transition-transform duration-500 ease-in-out p-5 overflow-y-auto sm:max-w-[300px] w-full">
   <!-- Header -->
     <div class="mb-6 flex justify-center relative">
-  <span class="text-2xl sm:text-3xl font-extrabold text-center">HealthFit</span>
+  <span class="text-5xl sm:text-5xl font-extrabold text-center">HealthFit</span>
   <button id="closeDrawer" class="absolute right-0 text-3xl font-bold hover:text-red-500">&times;</button>
 </div>
 
