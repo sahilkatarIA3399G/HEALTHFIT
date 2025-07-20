@@ -5,7 +5,6 @@ const headerHTML = `
 <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
     <div class="flex items-center space-x-2">
-      <img src="images/logo.png" alt="logo" class="w-8 h-8 rounded-full" />
       <span class="text-2xl font-bold">HealthFit</span>
     </div>
     <button id="hamburger" class="sm:hidden focus:outline-none">
@@ -28,7 +27,7 @@ const headerHTML = `
   <div class="flex items-center justify-between mb-6">
     <div class="flex items-center space-x-3">
       
-      <span class="text-xl item-center font-semibold">HealthFit</span>
+      <span class="text-xl font-bold text-center">HealthFit</span>
     </div>
     <button id="closeDrawer" class="text-3xl font-bold hover:text-red-500">&times;</button>
   </div>
