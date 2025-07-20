@@ -2,7 +2,7 @@
 // headerFooter.js - Advanced Dark Popup with Icons and Hover Effects
 
 const headerHTML = `
-<header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg sticky top-0 z-50">
+<header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg fixed top-0 left-0 w-full z-50">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
     <div class="flex items-center space-x-2">
       <span class="text-2xl font-bold">HealthFit</span>
