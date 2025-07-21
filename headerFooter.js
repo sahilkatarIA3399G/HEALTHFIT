@@ -31,7 +31,7 @@ const headerHTML = `
 </div>
 
   <!-- Nav Menu -->
-  <nav class="flex flex-col ">
+  <nav class="flex flex-col space-y-5">
     <a href="index.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-home mr-3"></i>Home</a>
     <a href="zym.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-dumbbell mr-3"></i>Gym</a>
     <a href="calisthetic.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-person-walking mr-3"></i>Calisthenics</a>
