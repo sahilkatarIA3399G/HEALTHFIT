@@ -11,6 +11,29 @@
     .hover-card:hover {
       transform: translateY(-4px) scale(1.02);
     }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      animation: slide 12s infinite linear;
+    }
+    .carousel img {
+      min-width: 5rem;
+      height: 5rem;
+      border-radius: 9999px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .carousel img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-33.33%); }
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800 min-h-screen flex flex-col">
@@ -27,7 +50,35 @@
         <input type="password" placeholder="Password" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
         <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Sign Up</button>
       </form>
-      <p class="text-center text-sm mt-4 text-gray-600">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Login</a></p>
+      <div class="mt-6">
+        <div class="carousel">
+          <img src="calisthetic.webp" alt="Calisthenics" onclick="window.location.href='calisthetic.html'">
+          <img src="cardio.webp" alt="Cardio" onclick="window.location.href='cardio.html'">
+          <img src="zym.webp" alt="Gym" onclick="window.location.href='zym.html'">
+        </div>
+      </div>
+      <p class="text-center text-sm mt-4 text-gray-600">Already have an account? <a href="#" onclick="toggleSigninModal(); toggleSignupModal();" class="text-blue-500 hover:underline">Login</a></p>
+    </div>
+  </div>
+
+  <!-- Signin Modal -->
+  <div id="signinModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative animate-fadeIn">
+      <button onclick="toggleSigninModal()" class="absolute top-2 right-4 text-2xl text-gray-500 hover:text-red-500">&times;</button>
+      <h2 class="text-2xl font-bold text-center mb-4 text-blue-600">Welcome Back</h2>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="password" placeholder="Password" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Login</button>
+      </form>
+      <div class="mt-6">
+        <div class="carousel">
+          <img src="zym.webp" alt="Gym" onclick="window.location.href='zym.html'">
+          <img src="calisthetic.webp" alt="Calisthenics" onclick="window.location.href='calisthetic.html'">
+          <img src="cardio.webp" alt="Cardio" onclick="window.location.href='cardio.html'">
+        </div>
+      </div>
+      <p class="text-center text-sm mt-4 text-gray-600">Don't have an account? <a href="#" onclick="toggleSignupModal(); toggleSigninModal();" class="text-blue-500 hover:underline">Sign Up</a></p>
     </div>
   </div>
 
@@ -38,7 +89,7 @@
       <p class="text-lg text-gray-600 mb-6">Train on your terms with AI-backed plans, expert routines, and real-time tracking. From gym to home — HealthFit adapts to your lifestyle.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
         <button onclick="toggleSignupModal()" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition">Get Started</button>
-        <a href="login.html" class="bg-white border border-blue-600 text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-blue-50 transition">Login</a>
+        <button onclick="toggleSigninModal()" class="bg-white border border-blue-600 text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-blue-50 transition">Login</button>
       </div>
     </div>
     <div class="lg:w-1/2 mb-10 lg:mb-0">
@@ -91,6 +142,11 @@
   <script>
     function toggleSignupModal() {
       const modal = document.getElementById('signupModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+    function toggleSigninModal() {
+      const modal = document.getElementById('signinModal');
       modal.classList.toggle('hidden');
       modal.classList.toggle('flex');
     }
