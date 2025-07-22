@@ -51,11 +51,32 @@ const footerHTML = `
 <footer class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-6 mt-auto">
   <p class="text-lg font-semibold">&copy; 2025 HealthFit. All rights reserved.</p>
   <p class="text-sm mt-1">Made for fitness lovers by SKG Group</p>
-  <div class="flex justify-center space-x-4 mt-3">
-    <a href="https://www.instagram.com/decent_boy0310?igsh=M3ZsOWliM2F4a3Rh"><img src="insta-logo.svg" class="w-5 h-5" alt="Instagram" /></a>
-    <a href="https://www.facebook.com/sahil.kataria.703129"><img src="Fb-logo.svg" class="w-5 h-5" alt="Facebook" /></a>
-    <a href="https://youtube.com/@medicines4you?si=-i3S7JGgw9y0AB88"><img src="Utube-logo.svg" class="w-6 h-6" alt="YouTube" /></a>
+   <div class="flex justify-center space-x-6 mt-3">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/decent_boy0310?igsh=M3ZsOWliM2F4a3Rh"
+       class="group transition-transform transform hover:scale-125 hover:-rotate-6 duration-300">
+      <img src="insta-logo.svg"
+           class="w-6 h-6 transition duration-300 group-hover:drop-shadow-lg group-hover:brightness-125"
+           alt="Instagram" />
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sahil.kataria.703129"
+       class="group transition-transform transform hover:scale-125 hover:rotate-6 duration-300">
+      <img src="Fb-logo.svg"
+           class="w-6 h-6 transition duration-300 group-hover:drop-shadow-lg group-hover:brightness-125 group-hover:invert-0"
+           alt="Facebook" />
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://youtube.com/@medicines4you?si=-i3S7JGgw9y0AB88"
+       class="group transition-transform transform hover:scale-125 hover:-rotate-12 duration-300">
+      <img src="Utube-logo.svg"
+           class="w-7 h-7 transition duration-300 group-hover:drop-shadow-lg group-hover:brightness-125"
+           alt="YouTube" />
+    </a>
   </div>
+
 </footer>
 `;
 
