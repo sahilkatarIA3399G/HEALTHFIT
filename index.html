@@ -2,37 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HealthFit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealthFit | Fitness Redefined</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script defer src="headerFooter.js"></script>
+  <style>
+    .blob {
+      background: radial-gradient(circle, rgba(0,119,255,0.3) 0%, rgba(255,255,255,0) 70%);
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+  </style>
 </head>
-<body class="bg-blue-50  min-h-screen flex flex-col">
+<body class="bg-white min-h-screen flex flex-col text-gray-800">
   <div id="header"></div>
-<br><br>
- <main class="flex-1 max-w-7xl mx-auto p-6">
-    <h1 class="text-4xl font-bold text-center mb-10"><b>Choose Your Workout</b></h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" align="center">
-  <a href="zym.html" class="bg-white rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500 ease-in-out p-6">
-    <img src="zym.webp" alt="Zym" class="rounded-xl w-full h-48 object-cover mb-4">
-    <h2 class="text-2xl font-semibold">Gym</h2>
-    <p class="text-gray-600"></p>
-  </a>
-  <a href="calisthetic.html" class="bg-white rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500 ease-in-out p-6">
-    <img src="calisthetic.webp" alt="Calisthenics" class="rounded-xl w-full h-48 object-cover mb-4">
-    <h2 class="text-2xl font-semibold">Calisthenics</h2>
-    <p class="text-gray-600"></p>
-  </a>
-  <a href="cardio.html" class="bg-white rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500 ease-in-out p-6">
-    <img src="cardio.webp" alt="Cardio" class="rounded-xl w-full h-48 object-cover mb-4">
-    <h2 class="text-2xl font-semibold">Cardio</h2>
-    <p class="text-gray-600"></p>
-  </a>
-</div>
-  </main>
+
+  <!-- Hero Section Split Layout -->
+  <section class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-20 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
+    <div class="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] rounded-full blob animate-pulse z-0"></div>
+
+    <div class="lg:w-1/2 z-10">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-6 leading-tight">Train. Transform. Triumph.</h1>
+      <p class="text-lg text-gray-600 mb-6">Welcome to HealthFit – the ultimate place to master strength, endurance, and flexibility. Start your journey with custom plans designed for your goals.</p>
+      <a href="signup.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition shadow-lg">Join Now</a>
+    </div>
+
+    <div class="lg:w-1/2 z-10 mt-10 lg:mt-0">
+      <img src="hero-fitness.svg" alt="Fitness Illustration" class="w-full max-w-lg mx-auto">
+    </div>
+  </section>
+
+  <!-- Workout Sections with Icons -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-center mb-12">Your Workout Paths</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Gym -->
+      <a href="zym.html" class="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 text-center card">
+        <i class="fas fa-dumbbell text-4xl text-blue-600 mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">Gym</h3>
+        <p class="text-gray-600">Sculpt your physique with guided strength training.</p>
+      </a>
+
+      <!-- Calisthenics -->
+      <a href="calisthetic.html" class="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 text-center card">
+        <i class="fas fa-person-walking text-4xl text-indigo-600 mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">Calisthenics</h3>
+        <p class="text-gray-600">Master bodyweight control and core strength.</p>
+      </a>
+
+      <!-- Cardio -->
+      <a href="cardio.html" class="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 text-center card">
+        <i class="fas fa-heartbeat text-4xl text-red-500 mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">Cardio</h3>
+        <p class="text-gray-600">Burn fat and build stamina the smart way.</p>
+      </a>
+    </div>
+  </section>
 
   <div id="footer"></div>
-
 </body>
 </html>
