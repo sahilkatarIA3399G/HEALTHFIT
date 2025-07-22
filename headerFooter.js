@@ -17,7 +17,7 @@ const headerHTML = `
       <a href="zym.html" class="hover:text-red-500">Gym</a>
       <a href="calisthetic.html" class="hover:text-red-500">Calisthenics</a>
       <a href="cardio.html" class="hover:text-red-500">Cardio</a>
-      <a href="signup.html" class="hover:text-red-500">Signup/Login</a>
+      
     </nav>
   </div>
 </header>
@@ -36,7 +36,7 @@ const headerHTML = `
     <a href="zym.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-dumbbell mr-3"></i>Gym</a>
     <a href="calisthetic.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-person-walking mr-3"></i>Calisthenics</a>
     <a href="cardio.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-running mr-3"></i>Cardio</a>
-    <a href="signup.html" class="flex items-center bg-blue-700 rounded-xl px-5 py-3 hover:bg-red-600 transition"><i class="fas fa-user mr-3"></i>Signup/Login</a>
+    
   </nav>
 </div>
 
