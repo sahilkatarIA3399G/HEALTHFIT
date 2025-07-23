@@ -3,35 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gym Workouts</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
-  <script defer src="headerFooter.js"></script>
+  <title>HealthFit | Pro Gym Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    .hero {
+      background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover no-repeat;
+    }
+    .glass {
+      backdrop-filter: blur(20px);
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
-<body class="bg-blue-50 min-h-screen flex flex-col">
-  <div id="header"></div>
-  <br><br>
- <main class="flex-1 max-w-7xl mx-auto p-6">
-    <h1 class="text-4xl font-bold text-center mb-10">Gym Workouts</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" align="center">
-  <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500 ease-in-out p-6">
-    <img src="bench.jpg" alt="Bench Press" class="rounded-xl w-full h-48 object-cover mb-4">
-    <h2 class="text-2xl font-semibold">Bench Press</h2>
-    <p class="text-gray-600"></p>
-  </div>
-  <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500 ease-in-out p-6">
-    <img src="squats.jfif" alt="Squats" class="rounded-xl w-full h-48 object-cover mb-4">
-    <h2 class="text-2xl font-semibold">Squats</h2>
-    <p class="text-gray-600"></p>
-  </div>
-  <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500 ease-in-out p-6">
-    <img src="deadlifts.webp" alt="Deadlift" class="rounded-xl w-full h-48 object-cover mb-4">
-    <h2 class="text-2xl font-semibold">Deadlift</h2>
-    <p class="text-gray-600"></p>
-  </div>
-</div>
-  </main>
+<body class="bg-gray-950 text-white">
+  <!-- Hero Section -->
+  <section class="hero h-screen flex items-center justify-center text-center px-6 relative">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 max-w-3xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Train. Transform. Triumph.</h1>
+      <p class="mt-6 text-lg text-gray-300">Welcome to the most advanced gym platform built for real warriors. Get coached. Get results. Get shredded.</p>
+      <a href="#programs" class="mt-8 inline-block bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full font-semibold transition">Explore Training</a>
+    </div>
+  </section>
 
-  <div id="footer"></div>
+  <!-- Programs Section -->
+  <section id="programs" class="py-24 px-6 max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-16 text-red-500">Elite Training Modules</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="glass p-6 rounded-xl shadow-xl">
+        <i class="fas fa-dumbbell text-4xl text-yellow-400 mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">Strength Lab</h3>
+        <p class="text-gray-300">Scientific hypertrophy and compound split systems to gain real muscle mass fast.</p>
+      </div>
+      <div class="glass p-6 rounded-xl shadow-xl">
+        <i class="fas fa-bolt text-4xl text-pink-500 mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">HIIT Zone</h3>
+        <p class="text-gray-300">Maximum burn. Zero boredom. Explosive fat-burn workouts with interval resistance.</p>
+      </div>
+      <div class="glass p-6 rounded-xl shadow-xl">
+        <i class="fas fa-dna text-4xl text-blue-400 mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">CoreX System</h3>
+        <p class="text-gray-300">Precision core mechanics for elite abs, posture, and back stability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans -->
+  <section class="bg-gray-900 py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-red-500">Choose Your Plan</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-8 rounded-xl shadow-lg text-center">
+        <h3 class="text-xl font-bold mb-4">Basic</h3>
+        <p class="text-4xl font-extrabold text-white mb-4">₹499/mo</p>
+        <ul class="text-gray-300 space-y-2 mb-6">
+          <li>Access to Gym Floor</li>
+          <li>1 Training Program</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="signup.html" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-white font-semibold">Choose Plan</a>
+      </div>
+      <div class="bg-red-700 p-8 rounded-xl shadow-xl text-center">
+        <h3 class="text-xl font-bold mb-4 text-white">Pro</h3>
+        <p class="text-4xl font-extrabold text-white mb-4">₹999/mo</p>
+        <ul class="text-white space-y-2 mb-6">
+          <li>Everything in Basic</li>
+          <li>3 Elite Programs</li>
+          <li>Trainer Support</li>
+        </ul>
+        <a href="signup.html" class="bg-white text-red-700 hover:bg-gray-100 px-6 py-2 rounded-full font-semibold">Choose Plan</a>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-xl shadow-lg text-center">
+        <h3 class="text-xl font-bold mb-4">Elite</h3>
+        <p class="text-4xl font-extrabold text-white mb-4">₹1499/mo</p>
+        <ul class="text-gray-300 space-y-2 mb-6">
+          <li>All Programs Unlocked</li>
+          <li>1-on-1 Coaching</li>
+          <li>Nutrition & Progress Tracker</li>
+        </ul>
+        <a href="signup.html" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-white font-semibold">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-gray-900 py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Success Stories</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <p class="text-gray-300">“I went from zero to beast in 8 weeks. This gym experience is unreal!”</p>
+        <h4 class="mt-4 font-semibold text-white">— Aryan Singh</h4>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <p class="text-gray-300">“They don’t just train bodies, they build discipline. Five stars.”</p>
+        <h4 class="mt-4 font-semibold text-white">— Rahul Patel</h4>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <p class="text-gray-300">“I joined for a transformation, stayed for the power mindset.”</p>
+        <h4 class="mt-4 font-semibold text-white">— Neha S.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-20 bg-red-600">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Are You Ready To Dominate?</h2>
+    <p class="text-white text-lg mb-8">Get in. Get strong. Get sculpted. Join India’s most advanced gym platform now.</p>
+    <a href="signup.html" class="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition">Start Training</a>
+  </section>
 </body>
 </html>
