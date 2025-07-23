@@ -18,6 +18,38 @@
   </style>
 </head>
 <body class="bg-gray-950 text-white">
+<!-- Signup Modal -->
+  <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative animate-fadeIn">
+      <button onclick="toggleSignupModal()" class="absolute top-2 right-4 text-2xl text-gray-500 hover:text-red-600">&times;</button>
+      <h2 class="text-2xl font-bold text-center mb-4 text-blue-600">Create Your Account</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Full Name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="email" placeholder="Email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="password" placeholder="Password" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-red-600 transition">Sign Up</button>
+      </form>
+     
+      <p class="text-center text-sm mt-4 text-gray-600">Already have an account? <a href="#" onclick="toggleSigninModal(); toggleSignupModal();" class="text-blue-500 hover:underline">Login</a></p>
+    </div>
+  </div>
+
+  <!-- Signin Modal -->
+  <div id="signinModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative animate-fadeIn">
+      <button onclick="toggleSigninModal()" class="absolute top-2 right-4 text-2xl text-gray-500 hover:text-red-600">&times;</button>
+      <h2 class="text-2xl font-bold text-center mb-4 text-blue-600">Welcome Back</h2>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="password" placeholder="Password" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-red-600 transition">Login</button>
+      </form>
+     
+      <p class="text-center text-sm mt-4 text-gray-600">Don't have an account? <a href="#" onclick="toggleSignupModal(); toggleSigninModal();" class="text-blue-500 hover:underline">Sign Up</a></p>
+    </div>
+  </div>
+  
+  
   <!-- Hero Section -->
   <section class="hero h-screen flex items-center justify-center text-center px-6 relative">
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
