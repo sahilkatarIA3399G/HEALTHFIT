@@ -66,7 +66,7 @@ const footerHTML = `
 
     <!-- YouTube -->
     <a href="https://youtube.com/@medicines4you?si=-i3S7JGgw9y0AB88"
-       class="group transition-transform transform hover:scale-125 hover:-rotate-6 duration-300">
+       class="group transition-transform transform hover:scale-125 hover:-rotate-10 duration-300">
       <img src="Utube-logo.svg" class="w-7 h-7 transition duration-300 group-hover:drop-shadow-lg group-hover:bg-red-500 rounded-xl brightness-125" alt="YouTube" />
     </a>
   </div>
